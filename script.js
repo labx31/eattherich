@@ -48,7 +48,10 @@ function calculateUserBiteValue() {
     }
 
     const userBiteValue = wealth / (weight * BITES_PER_POUND);
-    userBiteValueDisplay.textContent = `Your value per bite: $${userBiteValue.toLocaleString('en-US', { maximumFractionDigits: 2 })}`;
+    userBiteValueDisplay.textContent = `Your value per bite: $${userBiteValue.toLocaleString('en-US', { 
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    })}`;
 }
 
 function calculateBiteValue(billionaire) {
@@ -75,7 +78,10 @@ function initializeBillionaires() {
             </div>
             <div class="stat">
                 <span class="stat-label">Per Bite:</span>
-                <span class="stat-value">$${calculateBiteValue(billionaire).toLocaleString('en-US', { maximumFractionDigits: 2 })}</span>
+                <span class="stat-value">$${calculateBiteValue(billionaire).toLocaleString('en-US', { 
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                })}</span>
             </div>
             <div class="stat">
                 <span class="stat-label">Bites Taken:</span>
