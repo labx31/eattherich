@@ -1,0 +1,324 @@
+/* Base Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 95%;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    border: 1px solid #daa520;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    background-color: #fff9e6;
+    border: 1px solid #daa520;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #daa520;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #daa520;
+}
+
+/* Enhanced User Input Section */
+#user-input {
+    background-color: #fff9e6;
+    padding: 2rem;
+    border: 1px solid #daa520;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(218, 165, 32, 0.1);
+}
+
+#user-input h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+#user-input h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #daa520;
+}
+
+#user-input .input-group {
+    margin-bottom: 1.25rem;
+}
+
+#user-input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#user-input input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 6px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#user-input input:focus {
+    outline: none;
+    border-color: #daa520;
+    box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.1);
+}
+
+#user-input input::placeholder {
+    color: #95a5a6;
+}
+
+#calculate-bite-value {
+    background-color: #daa520;
+    color: #fff;
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#calculate-bite-value:hover {
+    background-color: #c69500;
+    transform: translateY(-1px);
+}
+
+#user-bite-value {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    border: 1px solid rgba(218, 165, 32, 0.3);
+}
+
+/* Button Styles */
+.button {
+    background-color: #daa520;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #c69500;
+    transform: translateY(-1px);
+}
+
+#reset-meal {
+    background-color: #495057;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+#reset-meal:hover {
+    background-color: #343a40;
+}
+
+/* Billionaire Cards */
+#billionaire-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.billionaire-card {
+    background-color: #fff;
+    border: 1px solid #daa520;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.stats-grid {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+}
+
+.stat {
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat:not(:last-child) {
+    border-bottom: 1px solid rgba(218, 165, 32, 0.2);
+}
+
+.stat-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.billionaire-card:hover {
+    transform: translateY(-3px);
+}
+
+.billionaire-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    border: 1px solid #daa520;
+}
+
+.take-bite-button {
+    background-color: #daa520;
+    margin-top: 0.75rem;
+}
+
+/* Accumulated Wealth Section */
+#accumulated-wealth {
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border: 1px solid #daa520;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+#total-wealth {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+/* Achievements Section */
+#achievements {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #daa520;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+#achievements h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.25rem;
+}
+
+#achievement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#achievement-list li {
+    background-color: #fff9e6;
+    border: 1px solid #daa520;
+    border-radius: 6px;
+    padding: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+
+.achievement-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.4rem;
+}
+
+.achievement-description {
+    color: #495057;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .billionaire-img {
+        width: 160px;
+        height: 160px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat the Rich. Literally.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eat the Rich</h1>
+        <div class="intro">
+            <p>Welcome to our exclusive dining experience, where even a taste is worth more than most will earn in a lifetime. Today's menu features a selection of the world's wealthiest, priced by the bite. Bon appétit!</p>
+        </div>
+        <div id="billionaire-cards">
+        </div>
+
+        <div id="accumulated-wealth">
+            <p id="total-wealth">Meal Value: $0</p>
+            <button id="reset-meal">Reset Meal</button>
+        </div>
+        
+        <div id="achievements">
+            <h2>Achievements Unlocked!</h2>
+            <ul id="achievement-list"></ul>
+        </div>
+
+        <div id="user-input">
+            <h2>Calculate Your Own Per-Bite Value</h2>
+            <div class="input-group">
+                <label for="user-weight">Your Weight (lbs)</label>
+                <input type="number" id="user-weight" placeholder="Enter your weight">
+            </div>
+            <div class="input-group">
+                <label for="user-wealth">Your Net Worth ($)</label>
+                <input type="number" id="user-wealth" placeholder="Enter your net worth">
+            </div>
+            <button id="calculate-bite-value">Calculate Your Value</button>
+            <p id="user-bite-value">Your value per bite: </p>
+        </div>
+
+        <div class="intro">
+            <p><i>Billionaire net worth sourced from the <a href="https://www.bloomberg.com/billionaires/">Bloomberg Billionaires Index</a>. Billionaire weights obtained via Google.</i></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
